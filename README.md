@@ -10,15 +10,17 @@ Build-up Steps
 **AWS S3**: access_key_id, access_secret_key, bucket_name
 **Azure**: key, conn_str, account_name, container_name
 **GCP Storage**: credential_file, bucket_name, 
-Then open **RAIS-on-Cloud-AWS_Azure_GCP/cloud.py** and fill the above in.
+Then open 
+**RAIS-on-Cloud-AWS_Azure_GCP/cloud.py** 
+and fill the above in.
 
-2. Proper Python revision on the Singularity Container (Python 2.7.18)
+2. Proper Python revision on the Singularity Container (Python **2.7.18**)
 **$ module load Python/2.7.18-GCCcore-10.2.0**
 
 3. Run use cases:
 For instance, 
 
-**$ ./run-tests.sh tests.test_2_NAS.test_1_RAID_on_Cloud**
+**$ ./RAIS-on-Cloud-AWS_Azure_GCP/run-tests.sh tests.test_2_NAS.test_1_RAID_on_Cloud**
 
 Another way of running the individual test cases is to use the following commands
 **$ PYTHONPATH=$PWD/lib:$PWD python tests/test_1_cloud_storage.py -v **
